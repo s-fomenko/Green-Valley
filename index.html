@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Заголовок страницы</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500|PT+Serif+Caption" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -16,8 +17,8 @@
         </a>
       </div>
         <div class="main-navigation">
-          <div class=«main-navigation__toggler»>
-            <span class=«main-navigation__toggler-elem»></span>
+          <div class="main-navigation__toggler">
+            <span class="main-navigation__toggler-elem"></span>
           </div>
           <ul class="main-navigation__list">
             <li class="main-navigation__item">
@@ -145,13 +146,18 @@
       </section>
       <div class="offer">
         <h2 class="page-title">Акции и предложения</h2>
-        <div class="offer__overlay">
-          <p class="offer__title">Скидки в мае</p>
-          <p class="offer__text">Забронируйте номер или коттедж любой категории до 31 июня и получите скидку 10%!</p>
-        </div>
-        <div class="slider">
-          <div class="slider__item"></div>
-          <div class="slider__item"></div>
+        <div class="offer-slider">
+          <div class="offer-slider__item">
+            <img class="offer__picture" src="#" alt="Пейзаж" width="100" height="50">
+            <div class="offer__overlay">
+              <p class="offer__title">Скидки в мае</p>
+              <p class="offer__text">Забронируйте номер или коттедж любой категории до 31 июня и получите скидку 10%!</p>
+            </div>
+          </div>
+          <ul class="offer-slider__toggler">
+            <li class="offer-slider__toggler-elem"></li>
+            <li class="offer-slider__toggler-elem"></li>
+          </ul>
         </div>
       </div>
       <section class="page-contacts">

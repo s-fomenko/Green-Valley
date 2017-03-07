@@ -3,3 +3,44 @@ body {
   margin: 0;
   padding: 0;
 }
+
+body {
+  min-width: 320px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Fira Sans", "Arial", sans-serif;
+  color: #000000;
+  font-style: normal;
+
+  background: white;
+}
+
+.sprite {
+  display: block;
+
+  background-image: url(spritesheet.png);
+  background-repeat: no-repeat;
+}
+
+.sprite-bus-icon {
+  width: 50px;
+  height: 29px;
+
+  background-position: -10px -10px;
+}
+
+.sprite-train-icon {
+  width: 58px;
+  height: 26px;
+
+  background-position: -10px -59px;
+}
+
+.sprite-vk-icon {
+  width: 22px;
+  height: 13px;
+
+  background-position: -10px -105px;
+}
