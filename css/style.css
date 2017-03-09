@@ -5,7 +5,7 @@ body {
 }
 
 body {
-  min-width: 320px;
+  width: 320px;
 
   font-weight: 400;
   font-size: 16px;
@@ -106,4 +106,8 @@ body {
 
 .page-logo {
   margin-right: 35px;
+}
+
+.hero-section {
+  background: url("../img/bg-1.jpg") no-repeat; min-height: 321px;
 }
