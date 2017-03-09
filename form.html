@@ -59,31 +59,29 @@
         <p class="page-form__text">Шаг 1</p>
         <fieldset class="page-form__section">
           <legend class="page-form__title">Дата отдыха</legend>
-          <div class="page-form__item">
-            <div class="page-form__wrapper">
+          <div class="page-form__wrapper">
+            <div class="page-form__item1">
               <input id="check-in" type="date" name="check-in" value="2015-11-10">
+              <label class="page-form__label" for="check-in">Дата въезда</label>
             </div>
-            <label for="check-in">Дата въезда</label>
-          </div>
-          <div class="page-form__item">
-            <div class="page-form__wrapper">
+            <div class="page-form__item1">
               <input id="check-out" type="date" name="check-out">
+              <label class="page-form__label" for="check-out">Дата выезда</label>
             </div>
-            <label for="check-out">Дата выезда</label>
           </div>
         </fieldset>
 
         <p class="page-form__text">Шаг 2</p>
         <fieldset class="page-form__section">
           <legend class="page-form__title">Место проживания</legend>
-          <label>
+          <label class="page-form__label">
             <div class="page-form__wrapper">
               <input id="hotel" type="radio" name="choose-place" value="hotel">
             </div>
             Отель
           </label>
 
-          <label for="cottage">
+          <label class="page-form__label" for="cottage">
             <div class="page-form__wrapper">
               <input id="cottage" type="radio" name="choose-place" value="cottage" checked>
             </div>
@@ -97,34 +95,26 @@
           <legend class="page-form__title">Тип коттеджа</legend>
           <ul class="page-form__list">
             <li>
-              <label>
-                <div class="page-form__wrapper">
-                  <input id="flagship" type="checkbox" name="place-type" value="flagship" checked>
-                </div>
+              <label class="page-form__label">
+                <input id="flagship" type="checkbox" name="place-type" value="flagship" checked>
                 Флагман
               </label>
             </li>
             <li>
-              <label>
-                <div class="page-form__wrapper">
-                  <input id="lake" type="checkbox" name="place-type" value="lake">
-                </div>
+              <label class="page-form__label">
+                <input id="lake" type="checkbox" name="place-type" value="lake">
                 Озёрный
               </label>
             </li>
             <li>
-              <label>
-                <div class="page-form__wrapper">
-                  <input id="port" type="checkbox" name="place-type" value="port">
-                </div>
+              <label class="page-form__label">
+                <input id="port" type="checkbox" name="place-type" value="port">
                 Портовый
               </label>
             </li>
             <li>
-              <label>
-                <div class="page-form__wrapper">
-                  <input id="olhovka" type="checkbox" name="place-type" value="olhovka">
-                </div>
+              <label class="page-form__label">
+                <input id="olhovka" type="checkbox" name="place-type" value="olhovka">
                 Ольховка
               </label>
             </li>
@@ -135,20 +125,20 @@
           <p class="page-form__text">Шаг 4</p>
           <fieldset class="page-form__section">
             <legend class="page-form__title">Персональная информация</legend>
-            <div class="page-form__item">
+            <div class="page-form__item4">
               <input type="text" name="first-name" value="Владимир" placeholder="Имя">
             </div>
-            <div class="page-form__item">
+            <div class="page-form__item4">
               <input type="text" name="last-name" placeholder="Фамилия">
             </div>
-            <div class="page-form__item">
+            <div class="page-form__item4">
               <input id="tel" type="tel" name="tel" placeholder="Номер телефона">
-              <label for="tel"></label>
+              <label class="page-form__label" for="tel"></label>
             </div>
             <p class="page-form__text  page-form__text--small">Мы свяжемся с вами в случае необходимости.</p>
-            <div class="page-form__item">
+            <div class="page-form__item4">
               <input id="email" type="email" name="email" placeholder="E-mail">
-              <label for="email"></label>
+              <label class="page-form__label" for="email"></label>
             </div>
             <p class="page-form__text  page-form__text--small">На этот адрес мы вышлем вам подтверждение о забронированном номере.</p>
           </fieldset>
@@ -157,36 +147,36 @@
         <p class="page-form__text">Шаг 5</p>
         <fieldset class="page-form__section">
           <legend class="page-form__title">Способ оплаты</legend>
-          <label>
+          <label class="page-form__label">
             <input type="radio" name="payment" value="later">
             По приезду
-            <p class="payment-notice">
+            <p class="paga-form__notice">
               Вы можете произвести оплату по факту заселения.
             </p>
           </label>
-          <label>
+          <label class="page-form__label">
             <input type="radio" name="payment" value="now" checked>
             Сейчас
-            <p class="payment-notice">
+            <p class="paga-form__notice">
               Прямо сейчас вы можете произвести оплату с помощью банковской карты.
             </p>
           </label>
-          <div class="page-form__item">
+          <div class="page-form__item5">
             <input id="card" type="text" name="card" placeholder="0000-0000-0000-0000">
-            <label for="card">Номер карты</label>
+            <label class="page-form__label" for="card">Номер карты</label>
           </div>
-          <div class="page-form__item">
+          <div class="page-form__item5">
             <input id="customer" type="text" name="customer" placeholder="Vladimir Vladimirov">
-            <label for="customer">Фамилия владельца карты</label>
+            <label class="page-form__label" for="customer">Фамилия владельца карты</label>
           </div>
-          <div class="page-form__item">
+          <div class="page-form__item5">
             <input id="cvv" type="text" name="cvv" placeholder="123">
-            <label for="cvv">Код cvv</label>
+            <label class="page-form__label" for="cvv">Код cvv</label>
             <img src="img/question-icon.png" alt="Знак вопроса" width="16" height="17">
           </div>
-          <div class="page-form__item">
+          <div class="page-form__item5">
             <input id="valid-until" type="text" name="valid-until" placeholder="01 / 2018">
-            <label for="valid-until">Действует до</label>
+            <label  class="page-form__label"for="valid-until">Действует до</label>
           </div>
         </fieldset>
 
