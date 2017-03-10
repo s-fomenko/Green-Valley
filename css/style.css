@@ -363,6 +363,10 @@ body {
   cursor: pointer;
 }
 
+.offer {
+  margin-bottom: 67px;
+}
+
 .offer-slider__item {
   position: relative;
 }
@@ -405,4 +409,120 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #191919;
+}
+
+.offer-slider__toggler {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+}
+
+.offer-slider__toggler-elem {
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin-right: 3px;
+
+  background-color: #ff7435;
+  border-radius: 50%;
+}
+
+.offer-slider__toggler-elem:last-child {
+  display: block;
+  width: 11px;
+  height: 11px;
+  margin-left: 17px;
+
+  background-color: #ffffff;
+  border: 2px solid #ff7435;
+  border-radius: 50%;
+}
+
+.page-contacts {
+  margin-bottom: 57px;
+}
+
+.map {
+  margin-bottom: 77px;
+}
+
+.page-title--contacts {
+  margin-bottom: 24px;
+}
+
+.routes {
+  position: relative;
+
+  margin-bottom: 50px;
+
+  text-align: center;
+}
+
+.routes:last-child {
+  margin-bottom: 0;
+}
+
+.routes__header {
+  margin: 0;
+  margin-bottom: 7px;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: #191919;
+  text-transform: uppercase;
+}
+
+.routes__header--bus::before {
+  content: "";
+  position: absolute;
+  top: -42px;
+  left: 133px;
+
+  display: block;
+  width: 50px;
+  height: 29px;
+
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  background-position: -10px -10px;
+}
+
+.routes__header--train::before {
+  content: "";
+  position: absolute;
+  top: -37px;
+  left: 129px;
+
+  display: block;
+  width: 58px;
+  height: 26px;
+
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  background-position: -10px -59px;
+}
+
+.routes__text {
+  margin: 0;
+  padding: 0;
+
+  font-size: 16px;
+  line-height: 22px;
+  color: #191919;
+}
+
+.routes__text span {
+  font-weight: bold;
+}
+
+.choose {
+  min-height: 882px;
+
+  background: url("../img/bg-5.jpg") no-repeat;
 }
