@@ -1,3 +1,4 @@
+/*=====global=====*/
 html,
 body {
   margin: 0;
@@ -5,7 +6,7 @@ body {
 }
 
 body {
-  width: 320px;
+  min-width: 320px;
 
   font-weight: 400;
   font-size: 16px;
@@ -17,11 +18,16 @@ body {
   background: white;
 }
 
+.container {
+  width: 320px;
+  margin: 0 auto;
+}
+
 /*=====sprite=====*/
 .sprite {
   display: block;
 
-  background-image: url("spritesheet.png");
+  background-image: url("../img/spritesheet.png");
   background-repeat: no-repeat;
 }
 
@@ -47,21 +53,31 @@ body {
 }
 
 /*=====header=====*/
-.main-navigation__list {
-  display: none;
+.page-header {
+  padding-top: 15px;
+  padding-bottom: 21px;
 }
 
-.page-header__contacts {
-  display: none;
+.page-header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  width: 320px;
+  margin: 0 auto;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
 }
 
-.btn--icon {
-  display: none;
+.page-logo {
+  padding-left: 30px;
 }
 
 .main-navigation__toggler {
   position: relative;
   top: 17px;
+  left: 37px;
 }
 
 .main-navigation__toggler-elem {
@@ -94,19 +110,19 @@ body {
   background-color: #ff7435;
 }
 
-.page-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 15px;
-  padding-bottom: 21px;
-  padding-left: 90px;
+.main-navigation__list {
+  display: none;
 }
 
-.page-logo {
-  margin-right: 37px;
+.page-header__contacts {
+  display: none;
 }
 
+.btn--icon {
+  display: none;
+}
+
+/*=====main=====*/
 .hero-section {
   min-height: 321px;
   padding-top: 20px;
@@ -119,6 +135,7 @@ body {
   padding-bottom: 3px;
 
   background-color: #ffffff;
+  opacity: 0.9;
 }
 
 .hero-section__header {
@@ -131,6 +148,7 @@ body {
   line-height: 26px;
   font-family: "PT Serif Caption", "Arial", sans-serif;
   text-align: center;
+  color: #1c1c1c;
   letter-spacing: 1px;
 }
 
@@ -141,6 +159,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   text-align: center;
+  color: #1c1c1c;
 }
 
 .features {
@@ -153,18 +172,25 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: center;
   margin: 0;
   padding: 0;
 
   list-style: none;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
 }
 
 .tab__item {
   position: relative;
-
-  padding-left: 21px;
+  /*padding-left: 21px;*/
 
   letter-spacing: 1px;
+}
+
+.tab__item:last-of-type {
+  padding-left: 21px;
 }
 
 .tab__link {
@@ -183,7 +209,7 @@ body {
   content: "";
   position: absolute;
   top: 21px;
-  left: 71px;
+  left: 52px;
 
   width: 30px;
   height: 2px;
