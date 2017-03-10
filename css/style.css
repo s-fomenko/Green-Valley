@@ -184,7 +184,6 @@ body {
 
 .tab__item {
   position: relative;
-  /*padding-left: 21px;*/
 
   letter-spacing: 1px;
 }
@@ -250,8 +249,11 @@ body {
   display: none;
 }
 
-.feedback__wrapper {
-  background-color: #10b096;
+.feedback {
+  min-height: 617px;
+  margin-bottom: 42px;
+
+  background: url("../img/bg-3.jpg") no-repeat;
 }
 
 .page-title--white {
@@ -262,6 +264,10 @@ body {
   color: #ffffff;
 }
 
+.feedback__wrapper {
+  background-color: #ffffff;
+}
+
 .feedback-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -269,6 +275,7 @@ body {
   -ms-flex-direction: column;
       flex-direction: column;
   align-items: center;
+  margin-bottom: 40px;
 
   -webkit-box-align: center;
   -webkit-box-direction: normal;
@@ -298,10 +305,48 @@ body {
   display: block;
   width: 22px;
   height: 13px;
+  margin-bottom: 8px;
 
   font-size: 0;
 
   background-image: url("../img/spritesheet.png");
   background-repeat: no-repeat;
   background-position: -10px -105px;
+}
+
+.feedback-card__text {
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 0;
+
+  line-height: 22px;
+  text-align: center;
+}
+
+.feedback-card__date {
+  padding-bottom: 25px;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #191919;
+  letter-spacing: 1px;
+}
+
+.btn--feedback {
+  display: block;
+  margin: 0 auto;
+  padding: 8px 23px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 20px;
+  outline: 0;
+  cursor: pointer;
 }
