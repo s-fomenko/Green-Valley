@@ -53,7 +53,7 @@ body {
   background-position: -10px -105px;
 }
 
-/*=====header=====*/
+/*=====mobile=====*/
 .page-header {
   padding-top: 15px;
   padding-bottom: 21px;
@@ -70,7 +70,7 @@ body {
 
 .page-logo {
   margin: 0 auto;
-  padding-left: 30px;
+  padding-left: 53px;
 }
 
 .page-logo__img {
@@ -82,7 +82,7 @@ body {
   position: relative;
   top: 17px;
 
-  margin-right: 30px;
+  margin-right: 23px;
 }
 
 .main-navigation__toggler-elem {
@@ -127,7 +127,6 @@ body {
   display: none;
 }
 
-/*=====main=====*/
 .page-main {
   margin-bottom: 30px;
 }
@@ -144,8 +143,7 @@ body {
   padding-top: 4px;
   padding-bottom: 3px;
 
-  background-color: #ffffff;
-  opacity: 0.9;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .hero-section__header {
@@ -677,4 +675,15 @@ body {
 
 .page-footer__contacts {
   display: none;
+}
+
+/*=====tablet=====*/
+@media all and (min-width: 768px) {
+  .container {
+  /*width: 100%;
+  max-width: 1200px;*/
+  width: 768px;
+  margin: 0 auto;
+  }
+
 }
