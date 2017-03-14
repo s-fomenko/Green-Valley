@@ -391,7 +391,7 @@ body {
   position: absolute;
   top: 159px;
 
-  width: 86%;
+  width: 276px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 20px;
@@ -680,10 +680,48 @@ body {
 /*=====tablet=====*/
 @media all and (min-width: 768px) {
   .container {
-  /*width: 100%;
+    /*width: 100%;
   max-width: 1200px;*/
-  width: 768px;
-  margin: 0 auto;
+    width: 768px;
+    margin: 0 auto;
   }
 
+  .hero-section {
+    min-height: 301px;
+
+    background: url("../img/bg-1-tablet.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  .hero-section__wrapper {
+    padding-left: 28px;
+
+    background: none;
+  }
+
+  .hero-section__header {
+    margin-bottom: 26px;
+
+    font-size: 36px;
+    line-height: 42px;
+    text-align: left;
+  }
+
+  .hero-section__header span {
+    background-color: rgba(255, 255, 255, 0.9);
+    outline: 3px solid rgba(255, 255, 255, 0.9);
+  }
+
+  .hero-section__text {
+    width: 480px;
+
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .hero-section__text span {
+    background-color: rgba(255, 255, 255, 0.9);
+    outline: 3px solid rgba(255, 255, 255, 0.9);
+  }
 }
