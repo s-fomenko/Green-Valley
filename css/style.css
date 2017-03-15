@@ -399,7 +399,7 @@ body {
 
 .offer__picture {
   width: 100%;
-
+  height: 299px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -864,6 +864,7 @@ body {
   }
 
   .feedback {
+    margin-bottom: 33px;
     padding-bottom: 46px;
 
     background: url("../img/bg-3-tablet.jpg") no-repeat;
@@ -907,4 +908,29 @@ body {
   .feedback-card__text {
     padding: 0 20px;
   }
+
+  .offer {
+    margin-bottom: 40px;
+  }
+
+  .page-title--offer {
+    padding-right: 42px;
+  }
+
+  .offer-slider__toggler {
+    padding-right: 32px;
+  }
+
+  .page-title--contacts {
+    padding-right: 40px;
+  }
+
+  .map {
+    margin-bottom: 36px;
+  }
+
+  .routes {
+    margin-bottom: 25px;
+  }
+
 }
