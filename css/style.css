@@ -698,10 +698,13 @@ body {
 /*=====tablet=====*/
 @media all and (min-width: 768px) {
   .container {
-    /*width: 100%;
-  max-width: 1200px;*/
-    width: 768px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
+  }
+
+  .page-header__container {
+    max-width: 1200px;
   }
 
   .hero-section {
@@ -756,11 +759,10 @@ body {
   }
 
   .tab__list {
-    justify-content: flex-start;
-    padding-left: 221px;
+    justify-content: center;
 
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
   }
 
   .tab__item:first-child {
@@ -781,8 +783,7 @@ body {
 
   .tab-content__text {
     width: 570px;
-    margin: 0;
-    padding-left: 82px;
+    margin: 0 auto;
   }
 
   .tab-content__text--hidden {
@@ -799,23 +800,20 @@ body {
     display: -ms-flexbox;
     display: flex;
         flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     margin: 0;
-    padding-left: 115px;
+    padding-right: 38px;
+    padding-left: 68px;
 
     list-style: none;
 
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     -ms-flex-wrap: wrap;
   }
 
   .advantages__item {
     margin-bottom: 26px;
-  }
-
-  .advantages__item:nth-child(5) {
-    padding-left: 140px;
   }
 
   .advantages__link {
@@ -859,6 +857,13 @@ body {
     font-size: 0;
   }
 
+  .preview-img {
+    width: 14.28%;
+
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
   .page-title--white {
     padding-right: 33px;
     padding-bottom: 45px;
@@ -873,9 +878,22 @@ body {
   }
 
   .feedback__wrapper {
-    padding-left: 129px;
-
     background-color: transparent;
+  }
+
+  .slider__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    align-items: center;
+    padding-right: 34px;
+
+    -webkit-box-align: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -ms-flex-align: center;
   }
 
   .feedback-card {
@@ -970,6 +988,7 @@ body {
     -ms-flex-direction: row;
         flex-direction: row;
     justify-content: space-between;
+    max-width: 1200px;
 
     -webkit-box-direction: normal;
     -webkit-box-orient: horizontal;
@@ -1005,4 +1024,10 @@ body {
     color: #191919;
     text-decoration: none;
   }
+}
+
+/*=====desktop=====*/
+@media all and (min-width: 1200px) {
+
+
 }
