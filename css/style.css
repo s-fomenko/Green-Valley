@@ -400,6 +400,7 @@ body {
 .offer__picture {
   width: 100%;
   height: 299px;
+
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -925,6 +926,10 @@ body {
     padding-right: 40px;
   }
 
+  .page-contacts {
+    margin-bottom: 46px;
+  }
+
   .map {
     margin-bottom: 36px;
   }
@@ -933,4 +938,71 @@ body {
     margin-bottom: 25px;
   }
 
+  .choose {
+    min-height: 498px;
+  }
+
+  .page-title--choose {
+    padding-right: 40px;
+  }
+
+  .choose__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 22px;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+  }
+
+  .choose-card {
+    margin-bottom: 0;
+  }
+
+  .choose-card__link img {
+    width: 353px;
+    height: 199px;
+  }
+
+  .page-footer__container {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    justify-content: space-between;
+
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+  }
+
+  .page-footer__address {
+    display: block;
+    width: 150px;
+    padding-top: 17px;
+    padding-left: 8px;
+
+    font-size: 14px;
+    line-height: 18px;
+    color: :#191919;
+  }
+
+  .page-footer__contacts {
+    display: block;
+    width: 150px;
+    padding-top: 16px;
+    padding-right: 17px;
+
+    text-align: left;
+    letter-spacing: 1px;
+  }
+
+  .page-footer__tel,
+  .page-footer__mail {
+    font-size: 14px;
+    line-height: 18px;
+    color: #191919;
+    text-decoration: none;
+  }
 }
