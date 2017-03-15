@@ -355,7 +355,7 @@ body {
   margin: 0;
   margin-bottom: 14px;
   padding: 0;
-  padding: 0 10px;
+  padding: 0 40px;
 
   line-height: 22px;
   text-align: center;
@@ -856,5 +856,55 @@ body {
     overflow: hidden;
 
     font-size: 0;
+  }
+
+  .page-title--white {
+    padding-right: 33px;
+    padding-bottom: 45px;
+  }
+
+  .feedback {
+    padding-bottom: 46px;
+
+    background: url("../img/bg-3-tablet.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  .feedback__wrapper {
+    padding-left: 129px;
+
+    background-color: transparent;
+  }
+
+  .feedback-card {
+    width: 477px;
+
+    background-color: #ffffff;
+  }
+
+  .feedback-card:nth-child(1) {
+    margin-bottom: 57px;
+  }
+
+  .feedback-card:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .feedback-card__link--fb {
+    display: block;
+    width: 17px;
+    height: 17px;
+    margin-bottom: 8px;
+
+    font-size: 0;
+
+    background-image: url("../img/fb-icon.png");
+    background-repeat: no-repeat;
+  }
+
+  .feedback-card__text {
+    padding: 0 20px;
   }
 }
