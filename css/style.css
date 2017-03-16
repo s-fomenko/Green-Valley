@@ -565,6 +565,20 @@ body {
   background-size: cover;
 }
 
+.choose__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  align-items: center;
+
+  -webkit-box-align: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -ms-flex-align: center;
+}
+
 .page-title--choose {
   margin: 0;
   padding: 0;
@@ -575,24 +589,16 @@ body {
 }
 
 .choose-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
+  width: 278px;
   margin-bottom: 20px;
 
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
+  text-align: center;
+
+  background-color: #ffffff;
 }
 
 .choose-card:last-child {
   margin-bottom: 0;
-}
-
-.choose-card__wrapper {
-  text-align: center;
-
-  background-color: #ffffff;
 }
 
 .choose-card__link {
@@ -972,15 +978,20 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    justify-content: center;
     padding: 0 22px;
 
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
   }
 
   .choose-card {
-    margin-bottom: 0;
+    width: 353px;
+    margin: 0 10px;
   }
 
   .choose-card__link img {
