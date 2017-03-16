@@ -20,7 +20,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 768px;
+  /*max-width: 768px;*/
   margin: 0 auto;
 }
 
@@ -125,7 +125,7 @@ body {
   display: none;
 }
 
-.btn--icon {
+.btn--header {
   display: none;
 }
 
@@ -709,7 +709,6 @@ body {
 @media all and (min-width: 768px) {
   .container {
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
   }
 
@@ -1045,7 +1044,7 @@ body {
 @media all and (min-width: 1200px) {
   .container {
     width: 1200px;
-    margin: 0 auto;
+    padding: 0 10px;
   }
 
   .page-header__container {
@@ -1125,11 +1124,7 @@ body {
     letter-spacing: 1px;
   }
 
-  .btn--icon {
-    display: block;
-  }
-
-  .btn {
+  .btn--header {
     position: relative;
 
     display: block;
@@ -1157,5 +1152,38 @@ body {
     height: 16px;
 
     background: url("../img/calendar-icon.png") no-repeat;
+  }
+
+  .hero-section {
+    min-height: 342px;
+    margin-bottom: 20px;
+    padding-top: 82px;
+    padding-left: 9px;
+
+    background: url("../img/bg-1-desktop.png") no-repeat;
+  }
+
+  .hero-section__header {
+    margin-bottom: 28px;
+    padding-right: 532px;
+
+    letter-spacing: 2px;
+  }
+
+  .tab-content {
+    padding-top: 45px;
+  }
+
+  .features {
+    min-height: 474px;
+  }
+
+  .gallery-img {
+    height: 500px;
+  }
+
+  .preview-img {
+    width: 197px;
+    height: 116px;
   }
 }
