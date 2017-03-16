@@ -400,6 +400,10 @@ body {
   position: relative;
 }
 
+.slider__arrow {
+  display: none;
+}
+
 .offer__picture {
   width: 100%;
   height: 299px;
@@ -1178,6 +1182,10 @@ body {
     min-height: 474px;
   }
 
+  .gallery {
+    margin-bottom: 39px;
+  }
+
   .gallery-img {
     height: 500px;
   }
@@ -1185,5 +1193,128 @@ body {
   .preview-img {
     width: 197px;
     height: 116px;
+  }
+
+  .feedback {
+    min-height: 485px;
+    margin-bottom: 40px;
+  }
+
+  .page-title--white {
+    padding-top: 40px;
+  }
+
+  .slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 36px;
+
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+  }
+
+  .slider__item {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    justify-content: center;
+    -ms-flex-order: 2;
+    order: 2;
+    padding-left: 15px;
+
+    -webkit-box-direction: normal;
+    -webkit-box-ordinal-group: 3;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+  }
+
+  .feedback-card {
+    margin: 0 10px;
+    margin-bottom: 0;
+  }
+
+  .feedback-card:first-child {
+    margin-bottom: 0;
+    padding: 2px 0;
+  }
+
+  .slider__arrow {
+    font-size: 0;
+  }
+
+  .slider__arrow--left {
+    display: block;
+    width: 20px;
+    height: 37px;
+
+    background: url("../img/arrow-left.png") no-repeat;
+  }
+
+  .slider__arrow--right {
+    display: block;
+    -ms-flex-order: 3;
+    order: 3;
+    width: 20px;
+    height: 37px;
+
+    background: url("../img/arrow-right.png") no-repeat;
+
+    -webkit-box-ordinal-group: 4;
+  }
+
+  .offer-slider {
+    margin-bottom: 101px;
+  }
+
+  .offer__picture {
+    width: 100%;
+    height: 336px;
+
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .offer__overlay {
+    top: 199px;
+
+    width: 328px;
+  }
+
+  .page-contacts {
+    margin-bottom: 76px;
+  }
+
+  .page-contacts__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: baseline;
+    padding-left: 125px;
+
+    -webkit-box-align: baseline;
+    -webkit-box-pack: center;
+    -ms-flex-align: baseline;
+    -ms-flex-pack: center;
+  }
+
+  .routes {
+    margin: 0 20px;
+  }
+
+  .routes:first-child {
+    margin-right: 58px;
+  }
+
+  .routes__text {
+    text-align: left;
+  }
+
+  .choose-card {
+    margin: 0 20px;
   }
 }
