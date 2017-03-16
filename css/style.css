@@ -1043,4 +1043,119 @@ body {
 
 /*=====desktop=====*/
 @media all and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .page-header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    -webkit-box-align: center;
+    -webkit-box-pack: start;
+    -ms-flex-align: center;
+    -ms-flex-pack: start;
+  }
+
+  .page-logo {
+    margin: 0;
+    margin-right: 41px;
+    padding: 0;
+  }
+
+  .main-navigation {
+    margin-right: 101px;
+  }
+
+  .main-navigation__toggler {
+    display: none;
+  }
+
+  .main-navigation__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  .main-navigation__item {
+    margin-right: 15px;
+  }
+
+  .main-navigation__link {
+    font-size: 14px;
+    line-height: 59px;
+    color: #191919;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+
+  .main-navigation__link--active {
+    color: #ff7435;
+  }
+
+  .page-header__contacts {
+    display: block;
+    margin-right: 28px;
+  }
+
+  .page-header__tel {
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 37px;
+    font-family: "PT Sans Caption", "Arial", sans-serif;
+    color: #191919;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+
+  .page-header__address {
+    font-size: 14px;
+    line-height: 18px;
+    color: #191919;
+    letter-spacing: 1px;
+  }
+
+  .btn--icon {
+    display: block;
+  }
+
+  .btn {
+    position: relative;
+
+    display: block;
+    padding: 10px 16px 10px 43px;
+
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+
+    background-color: #ff7435;
+    border-radius: 25px;
+  }
+
+  .btn::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 19px;
+
+    display: block;
+    width: 15px;
+    height: 16px;
+
+    background: url("../img/calendar-icon.png") no-repeat;
+  }
 }
