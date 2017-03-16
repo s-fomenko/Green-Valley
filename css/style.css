@@ -142,8 +142,7 @@ body {
 }
 
 .hero-section__wrapper {
-  padding-top: 4px;
-  padding-bottom: 3px;
+  padding: 4px 19px 3px;
 
   background-color: rgba(255, 255, 255, 0.9);
 }
@@ -175,10 +174,6 @@ body {
 .features {
   min-height: 355px;
   padding-top: 18px;
-
-  background: url("../img/bg-2.jpg") no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .tab__list {
@@ -188,6 +183,7 @@ body {
   justify-content: center;
   margin: 0;
   padding: 0;
+  padding: 0 10px 10px;
 
   list-style: none;
 
@@ -231,6 +227,10 @@ body {
 
 .tab-content {
   padding-top: 32px;
+
+  background: url("../img/bg-2.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .page-title {
@@ -299,9 +299,9 @@ body {
   color: #ffffff;
 }
 
-.feedback__wrapper {
+/*.feedback__wrapper {
   background-color: #ffffff;
-}
+}*/
 
 .feedback-card {
   display: -webkit-box;
@@ -310,7 +310,10 @@ body {
   -ms-flex-direction: column;
       flex-direction: column;
   align-items: center;
+  width: 100%;
   margin-bottom: 40px;
+
+  background-color: #ffffff;
 
   -webkit-box-align: center;
   -webkit-box-direction: normal;
@@ -488,6 +491,7 @@ body {
 
 .page-title--contacts {
   margin-bottom: 24px;
+  padding: 0 10px;
 }
 
 .routes {
@@ -877,9 +881,9 @@ body {
     background-size: cover;
   }
 
-  .feedback__wrapper {
+  /*.feedback__wrapper {
     background-color: transparent;
-  }
+  }*/
 
   .slider__item {
     display: -webkit-box;
@@ -902,7 +906,7 @@ body {
     background-color: #ffffff;
   }
 
-  .feedback-card:nth-child(1) {
+  .feedback-card:first-child {
     margin-bottom: 57px;
   }
 
@@ -1028,6 +1032,4 @@ body {
 
 /*=====desktop=====*/
 @media all and (min-width: 1200px) {
-
-
 }
