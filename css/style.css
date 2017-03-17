@@ -20,7 +20,6 @@ body {
 
 .container {
   width: 100%;
-  /*max-width: 768px;*/
   margin: 0 auto;
 }
 
@@ -1315,6 +1314,116 @@ body {
   }
 
   .choose-card {
-    margin: 0 20px;
+    margin: 0 20;
   }
+}
+
+
+/*=====form page=====*/
+.booking {
+  width: 280px;
+  margin: 0 auto;
+  padding: 25px 20px;
+}
+
+.booking__header {
+  margin: 0;
+  padding: 0;
+  padding: 41px 0 13px;
+
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  font-family: "PT Serif Caption", "Arial", sans-serif;
+  text-align: center;
+  color: #000000;
+  letter-spacing: 2px;
+}
+
+.booking__text {
+  margin: 0;
+  padding: 0;
+  padding: 10px 11px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Fira Sans", "Arial", sans-serif;
+  text-align: center;
+  color: #000000;
+  letter-spacing: 1px;
+}
+
+.booking__text--orange {
+  padding: 0;
+
+  font-weight: 500;
+  color: #eb6a2f;
+  text-decoration: none;
+}
+
+@media all and (min-width: 768px) {
+  .booking {
+    width: 420px;
+    margin: 0 auto;
+    padding: 25px 20px;
+  }
+
+  .booking__text {
+    letter-spacing: 0;
+  }
+}
+
+.page-form__text {
+  margin: 0;
+  padding: 0;
+  padding-top: 56px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #929292;
+  text-transform: uppercase;
+}
+
+.step-1-block {
+  border: 0;
+}
+
+.page-form__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 30px;
+
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 19px;
+  font-family: "PT Serif", "Arial", sans-serif;
+  text-align: center;
+  color: #191919;
+}
+
+.step-1-block__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  align-items: center;
+
+  -webkit-box-align: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -ms-flex-align: center;
+}
+
+.step-1-block__label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Fira Sans", "Arial", sans-serif;
+  color: #4c4c4c;
+  text-transform: uppercase;
 }
