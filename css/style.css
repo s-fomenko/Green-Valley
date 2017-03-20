@@ -1164,6 +1164,7 @@ body {
     padding-left: 9px;
 
     background: url("../img/bg-1-desktop.png") no-repeat;
+    background-size: cover;
   }
 
   .hero-section__header {
@@ -1197,6 +1198,9 @@ body {
   .feedback {
     min-height: 485px;
     margin-bottom: 40px;
+
+    background: url("../img/bg-3-desktop.jpg") no-repeat;
+    background-size: cover;
   }
 
   .page-title--white {
