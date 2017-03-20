@@ -1473,3 +1473,23 @@ body {
 
   border-left: none;
 }
+
+@media all and (min-width: 768px) {
+  .form-bg {
+    min-height: 260px;
+  }
+
+  .page-form__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+  }
+
+  .step-1-block__item {
+    margin: 0 12px;
+  }
+}
