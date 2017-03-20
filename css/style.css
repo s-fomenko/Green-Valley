@@ -1484,7 +1484,7 @@ body {
     min-height: 260px;
   }
 
-  .page-form__wrapper {
+  .step-1-block__inner {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1504,11 +1504,26 @@ body {
     padding: 0 450px 100px;
   }
 
-  .page-form__wrapper {
+  .step-1-block__inner {
+    position: relative;
+
     padding-top: 23px;
     padding-bottom: 19px;
 
     background-color: #ffffff;
+  }
+
+  .step-1-block__item::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 183px;
+
+    display: block;
+    width: 1px;
+    height: 107px;
+
+    background-color: #ebebeb;
   }
 
   .step-1-block__label {
@@ -1526,5 +1541,112 @@ body {
 
   .step-1-block__input-item:last-child {
     width: 50px;
+  }
+}
+
+.step-2-block {
+  min-height: 250px;
+  padding-left: 17px;
+
+  border: 0;
+}
+
+.page-form__title--step-2 {
+  padding-bottom: 23px;
+}
+
+.page-form__text--step2 {
+  padding-top: 40px;
+}
+
+.step-2-block__inner {
+  position: relative;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-around;
+  width: 274px;
+  min-height: 134px;
+  margin: 0 auto;
+  padding-top: 24px;
+  padding-left: 4px;
+
+  border: 1px solid #ebebeb;
+
+  -ms-flex-pack: distribute;
+}
+
+.step-2block__input-item {
+  display: none;
+}
+
+.step-2-block__label {
+  margin: 0 25px;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: #4c4c4c;
+  text-transform: uppercase;
+}
+
+.step-2-block__label::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 138px;
+
+  display: block;
+  width: 1px;
+  height: 107px;
+
+  background-color: #ebebeb;
+}
+
+.step-2-block__label::after {
+  content: "";
+  position: absolute;
+  top: 53px;
+  left: 28px;
+
+  display: block;
+  width: 82px;
+  height: 64px;
+
+  background: url("../img/hotel-icon.png");
+  cursor: pointer;
+}
+
+.step-2-block__label:nth-child(2)::after {
+  top: 53px;
+  left: 169px;
+
+  width: 80px;
+  height: 62px;
+
+  background: url("../img/cottage-icon.png");
+}
+
+@media all and (min-width: 768px) {
+  .page-form__text--step2 {
+    padding-top: 47px;
+  }
+
+  .step-2-block__inner {
+    width: 372px;
+  }
+
+  .step-2-block__label::before {
+    left: 183px;
+  }
+
+  .step-2-block__label::after {
+    top: 54px;
+    left: 48px;
+  }
+
+  .step-2-block__label:nth-child(2)::after {
+    top: 54px;
+    left: 237px;
   }
 }

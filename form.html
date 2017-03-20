@@ -63,7 +63,7 @@
           <p class="page-form__text">Шаг 1</p>
           <fieldset class="step-1-block">
             <legend class="page-form__title">Дата отдыха</legend>
-            <div class="page-form__wrapper">
+            <div class="step-1-block__inner">
               <div class="step-1-block__item">
                 <label class="step-1-block__label" for="check-in">Дата въезда</label>
                 <div class="step-1-block__input-list">
@@ -83,22 +83,20 @@
             </div>
           </fieldset>
         </div>
-        <p class="page-form__text">Шаг 2</p>
+        <p class="page-form__text  page-form__text--step2">Шаг 2</p>
         <fieldset class="step-2-block">
-          <legend class="page-form__title">Место проживания</legend>
-          <label class="step-2-block__label">
-            <div class="page-form__wrapper">
-              <input id="hotel" type="radio" name="choose-place" value="hotel">
-            </div>
-            Отель
-          </label>
+          <legend class="page-form__title  page-form__title--step-2">Место проживания</legend>
+          <div class="step-2-block__inner">
+            <label class="step-2-block__label">
+              Отель
+                <input class="step-2block__input-item" id="hotel" type="radio" name="choose-place" value="hotel">
+            </label>
 
-          <label class="step-2-block__label" for="cottage">
-            <div class="page-form__wrapper">
-              <input id="cottage" type="radio" name="choose-place" value="cottage" checked>
-            </div>
-            Коттедж
-          </label>
+            <label class="step-2-block__label" for="cottage">
+              Коттедж
+                <input class="step-2block__input-item" id="cottage" type="radio" name="choose-place" value="cottage" checked>
+            </label>
+          </div>
 
         </fieldset>
 
