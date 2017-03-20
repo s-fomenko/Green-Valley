@@ -1650,3 +1650,44 @@ body {
     left: 237px;
   }
 }
+
+.step-3-block {
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+}
+
+.page-form__text--step3 {
+  background-color: #f1f1f1;
+}
+
+.page-form__title--step3 {
+  width: 100%;
+
+  background-color: #f1f1f1;
+}
+
+.page-form__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  align-items: center;
+
+  list-style: none;
+
+  -webkit-box-align: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -ms-flex-align: center;
+}
+
+.page-form__item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #979696;
+  text-transform: uppercase;
+}
