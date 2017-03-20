@@ -964,6 +964,9 @@ body {
 
   .choose {
     min-height: 498px;
+
+    background: url("../img/bg-5-desktop.jpg") no-repeat;
+    background-position: center;
   }
 
   .page-title--choose {
@@ -1492,6 +1495,36 @@ body {
   }
 
   .step-1-block__item {
-    margin: 0 12px;
+    margin: 0 25px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .step-1-block {
+    padding: 0 450px 100px;
+  }
+
+  .page-form__wrapper {
+    padding-top: 23px;
+    padding-bottom: 19px;
+
+    background-color: #ffffff;
+  }
+
+  .step-1-block__label {
+    margin-bottom: 18px;
+  }
+
+  .step-1-block__input-item {
+    width: 30px;
+    height: 24px;
+  }
+
+  .step-1-block__input-item:nth-child(2) {
+    width: 42px;
+  }
+
+  .step-1-block__input-item:last-child {
+    width: 50px;
   }
 }
