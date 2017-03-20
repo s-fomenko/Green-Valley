@@ -298,10 +298,6 @@ body {
   color: #ffffff;
 }
 
-/*.feedback__wrapper {
-  background-color: #ffffff;
-}*/
-
 .feedback-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -760,10 +756,6 @@ body {
 
   .features {
     min-height: 546px;
-
-    background: url("../img/bg-2-tablet.jpg") no-repeat;
-    background-position: center;
-    background-size: cover;
   }
 
   .tab {
@@ -791,6 +783,12 @@ body {
     margin-bottom: 20px;
 
     text-align: left;
+  }
+
+  .tab-content {
+    background: url("../img/bg-2-tablet.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   .tab-content__text {
@@ -888,10 +886,6 @@ body {
     background: url("../img/bg-3-tablet.jpg") no-repeat;
     background-size: cover;
   }
-
-  /*.feedback__wrapper {
-    background-color: transparent;
-  }*/
 
   .slider__item {
     display: -webkit-box;
@@ -1174,12 +1168,16 @@ body {
     letter-spacing: 2px;
   }
 
-  .tab-content {
-    padding-top: 45px;
-  }
-
   .features {
     min-height: 474px;
+  }
+
+  .tab-content {
+    padding-top: 45px;
+
+    background: none;
+    background: url("../img/bg-2-desktop.jpg") no-repeat;
+    background-position: center;
   }
 
   .gallery {
