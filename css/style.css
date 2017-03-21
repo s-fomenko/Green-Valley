@@ -169,6 +169,10 @@ body {
 .features {
   min-height: 355px;
   padding-top: 18px;
+
+  background: url("../img/bg-2.jpg") no-repeat;
+  background-position: 0 17px;
+  background-size: cover;
 }
 
 .tab__list {
@@ -222,10 +226,6 @@ body {
 
 .tab-content {
   padding-top: 32px;
-
-  background: url("../img/bg-2.jpg") no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .page-title {
@@ -467,7 +467,6 @@ body {
   display: block;
   width: 11px;
   height: 11px;
-
 
   background-color: #ff7435;
   border-radius: 50%;
@@ -757,6 +756,10 @@ body {
 
   .features {
     min-height: 546px;
+
+    background: url("../img/bg-2-tablet.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   .tab {
@@ -784,12 +787,6 @@ body {
     margin-bottom: 20px;
 
     text-align: left;
-  }
-
-  .tab-content {
-    background: url("../img/bg-2-tablet.jpg") no-repeat;
-    background-position: center;
-    background-size: cover;
   }
 
   .tab-content__text {
@@ -1179,14 +1176,14 @@ body {
 
   .features {
     min-height: 474px;
-  }
-
-  .tab-content {
-    padding-top: 45px;
 
     background: none;
     background: url("../img/bg-2-desktop.jpg") no-repeat;
     background-position: center;
+  }
+
+  .tab-content {
+    padding-top: 45px;
   }
 
   .gallery {
@@ -1426,6 +1423,8 @@ body {
 }
 
 .step-1-block__item {
+  position: relative;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1468,15 +1467,27 @@ body {
   font-size: 14px;
   line-height: 18px;
   text-align: center;
-  color: #979696;
+  color: #0ab89d;
   text-transform: uppercase;
 
   border: 1px solid #ebebeb;
   outline: none;
 }
 
-.step-1-block__input-item--green {
-  color: #0ab89d;
+.step-1-block__input-item::-webkit-input-placeholder {
+  color: #979696;
+}
+
+.step-1-block__input-item::-moz-placeholder {
+  color: #979696;
+}
+
+.step-1-block__input-item:-ms-input-placeholder {
+  color: #979696;
+}
+
+.step-1-block__input-item::placeholder {
+  color: #979696;
 }
 
 .step-1-block__input-item:nth-child(2) {
@@ -1517,21 +1528,23 @@ body {
   .step-1-block__inner {
     position: relative;
 
+    max-width: 380px;
+    margin: 0 auto;
     padding-top: 23px;
     padding-bottom: 19px;
 
     background-color: #ffffff;
   }
 
-  .step-1-block__item::after {
+  .step-1-block__item:first-child::after {
     content: "";
     position: absolute;
-    top: 25px;
-    left: 183px;
+    top: 3px;
+    left: 158px;
 
     display: block;
     width: 1px;
-    height: 107px;
+    height: 88px;
 
     background-color: #ebebeb;
   }
