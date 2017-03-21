@@ -128,10 +128,6 @@ body {
   display: none;
 }
 
-.page-main {
-  margin-bottom: 30px;
-}
-
 .hero-section {
   min-height: 321px;
   padding-top: 20px;
@@ -463,11 +459,15 @@ body {
   cursor: pointer;
 }
 
+.offer-slider__toggler-elem:first-child {
+  margin-right: 20px;
+}
+
 .offer-slider__toggler-elem--active {
   display: block;
   width: 11px;
   height: 11px;
-  margin-right: 20px;
+
 
   background-color: #ff7435;
   border-radius: 50%;
@@ -477,7 +477,7 @@ body {
   margin-bottom: 57px;
 }
 
-.map {
+.page-contacts__map {
   margin-bottom: 77px;
 }
 
@@ -637,6 +637,7 @@ body {
 }
 
 .page-footer {
+  padding-top: 30px;
   padding-bottom: 25px;
 
   text-align: center;
@@ -954,7 +955,7 @@ body {
     margin-bottom: 46px;
   }
 
-  .map {
+  .page-contacts__map {
     margin-bottom: 36px;
   }
 
@@ -1165,8 +1166,8 @@ body {
   }
 
   .hero-section__wrapper {
-    margin: 0 auto;
     max-width: 1200px;
+    margin: 0 auto;
   }
 
   .hero-section__header {
