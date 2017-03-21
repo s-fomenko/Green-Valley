@@ -1675,6 +1675,9 @@ body {
   -ms-flex-direction: column;
       flex-direction: column;
   align-items: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 27px;
 
   list-style: none;
 
@@ -1685,9 +1688,33 @@ body {
 }
 
 .page-form__item {
+  padding: 17px 0;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
   color: #979696;
   text-transform: uppercase;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  position: relative;
+
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -40px;
+
+  width: 16px;
+  height: 12px;
+
+  background: url("../img/checkbox-icon.png");
 }
