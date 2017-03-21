@@ -18,7 +18,7 @@ body {
   background: white;
 }
 
-.container {
+.page__wrapper {
   width: 100%;
   margin: 0 auto;
 }
@@ -60,7 +60,7 @@ body {
   border: 1px solid #ebebeb;
 }
 
-.page-header__container {
+.page-header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -642,7 +642,7 @@ body {
   text-align: center;
 }
 
-.page-footer__container {
+.page-footer__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -706,12 +706,12 @@ body {
 
 /*=====tablet=====*/
 @media all and (min-width: 768px) {
-  .container {
+  .page__wrapper {
     width: 100%;
     margin: 0 auto;
   }
 
-  .page-header__container {
+  .page-header__wrapper {
     max-width: 1200px;
   }
 
@@ -998,7 +998,7 @@ body {
     height: 199px;
   }
 
-  .page-footer__container {
+  .page-footer__wrapper {
     -ms-flex-direction: row;
         flex-direction: row;
     justify-content: space-between;
@@ -1042,12 +1042,12 @@ body {
 
 /*=====desktop=====*/
 @media all and (min-width: 1200px) {
-  .container {
+  .page__wrapper {
     width: 1200px;
     padding: 0 10px;
   }
 
-  .page-header__container {
+  .page-header__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1162,6 +1162,11 @@ body {
 
     background: url("../img/bg-1-desktop.png") no-repeat;
     background-size: cover;
+  }
+
+  .hero-section__wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
   }
 
   .hero-section__header {
@@ -1316,6 +1321,10 @@ body {
 
   .routes__text {
     text-align: left;
+  }
+
+  .choose {
+    background-size: cover;
   }
 
   .choose-card {
