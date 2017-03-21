@@ -1677,7 +1677,9 @@ body {
 .step-3-block {
   margin: 0;
   padding: 0;
+  padding-bottom: 50px;
 
+  background-color: #f1f1f1;
   border: 0;
 }
 
@@ -1701,8 +1703,11 @@ body {
   margin: 0;
   padding: 0;
   padding-top: 27px;
+  padding-bottom: 23px;
 
   list-style: none;
+
+  background-color: #ffffff;
 
   -webkit-box-align: center;
   -webkit-box-direction: normal;
@@ -1740,4 +1745,59 @@ input[type="checkbox"]:checked + label::before {
   height: 12px;
 
   background: url("../img/checkbox-icon.png");
+}
+
+@media all and (min-width: 768px) {
+  .step-3-block {
+    padding-bottom: 21px;
+  }
+
+  .page-form__list {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 47px 14px 43px;
+
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+  }
+
+  .page-form__item {
+    position: relative;
+
+    width: 25%;
+    margin-right: 2px;
+
+    text-align: center;
+  }
+
+  .page-form__item:nth-child(3) {
+    -ms-flex-order: 1;
+    order: 1;
+
+    -webkit-box-ordinal-group: 2;
+  }
+
+  .page-form__item::after {
+    content: "";
+    position: absolute;
+    top: -19px;
+    right: 0;
+
+    display: block;
+    width: 1px;
+    height: 88px;
+
+    background-color: #ebebeb;
+  }
+
+  .page-form__item:nth-child(3)::after {
+    display: none;
+  }
+
+  input[type="checkbox"]:checked + label::before {
+    top: 32px;
+    left: 23px;
+  }
 }
