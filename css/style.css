@@ -1471,7 +1471,7 @@ body {
   text-transform: uppercase;
 
   border: 1px solid #ebebeb;
-  outline: none;
+  outline: 0;
 }
 
 .step-1-block__input-item::-webkit-input-placeholder {
@@ -1811,7 +1811,7 @@ input[type="checkbox"]:checked + label::before {
     align-items: baseline;
     max-width: 780px;
     margin: 0 auto;
-    padding: 25px 40px 20px;
+    padding: 25px 15px 20px;
 
     list-style: none;
 
@@ -1862,4 +1862,115 @@ input[type="checkbox"]:checked + label::before {
     top: 32px;
     left: 23px;
   }
+}
+
+.step-4-block {
+  border: 0;
+}
+
+.step-4-block__title {
+  padding-top: 0;
+  padding-bottom: 32px;
+
+  line-height: 31px;
+}
+
+.step-4-block__list {
+  position: relative;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  align-items: center;
+
+  -webkit-box-align: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -ms-flex-align: center;
+}
+
+.step-4-block__item {
+  margin-bottom: 20px;
+}
+
+.step-4-block__item:first-child::before {
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: 28px;
+
+  display: block;
+  width: 16px;
+  height: 12px;
+
+  background: url("../img/checkbox-icon.png") no-repeat;
+}
+
+.step-4-block__item:nth-child(3),
+.step-4-block__item:nth-child(5) {
+  margin-bottom: 0;
+}
+
+.input-text {
+  padding: 15px 65px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #191919;
+  text-transform: uppercase;
+
+  border: 1px solid #ebebeb;
+  outline: 0;
+}
+
+.input-text::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #979696;
+  text-transform: uppercase;
+}
+
+.input-text::-moz-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #979696;
+  text-transform: uppercase;
+}
+
+.input-text:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #979696;
+  text-transform: uppercase;
+}
+
+.input-text::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #979696;
+  text-transform: uppercase;
+}
+
+.page-form__text--small {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  padding-top: 8px;
+  padding-left: 6px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  color: #4c4c4c;
+  text-transform: none;
+  letter-spacing: 1px;
 }
