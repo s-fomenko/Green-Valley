@@ -1725,6 +1725,10 @@ body {
   text-transform: uppercase;
 }
 
+.sub-list {
+  display: none;
+}
+
 input[type="checkbox"] {
   display: none;
 }
@@ -1749,7 +1753,7 @@ input[type="checkbox"]:checked + label::before {
 
 @media all and (min-width: 768px) {
   .step-3-block {
-    padding-bottom: 21px;
+    padding-bottom: 50px;
   }
 
   .page-form__list {
@@ -1757,6 +1761,7 @@ input[type="checkbox"]:checked + label::before {
         flex-direction: row;
     max-width: 780px;
     margin: 0 auto;
+    margin-bottom: 21px;
     padding: 47px 14px 43px;
 
     -webkit-box-direction: normal;
@@ -1794,6 +1799,63 @@ input[type="checkbox"]:checked + label::before {
 
   .page-form__item:nth-child(3)::after {
     display: none;
+  }
+
+  .sub-list {
+    position: relative;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 25px 40px 20px;
+
+    list-style: none;
+
+    background-color: #ffffff;
+
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    -ms-flex-pack: distribute;
+  }
+
+  .sub-list::before {
+    content: "";
+    position: absolute;
+    top: -17px;
+    left: 94px;
+
+    display: block;
+    width: 19px;
+    height: 17px;
+
+    background: url("../img/triangle.png") no-repeat;
+  }
+
+  .sub-list__item {
+    width: 95px;
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+  }
+
+  .sub-list__picture {
+    margin-bottom: 6px;
+  }
+
+  .sub-list__text {
+    margin: 0;
+    padding: 0;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #191919;
+    text-transform: uppercase;
   }
 
   input[type="checkbox"]:checked + label::before {
