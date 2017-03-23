@@ -183,34 +183,38 @@
             <label for="now" class="step-5-block__label  step-5-block__label--radio">Сейчас</label>
             <p class="page-form__notice">Прямо сейчас вы можете произвести оплату с помощью банковской карты.</p>
           </div>
-          <div class="step-5-block__item">
-            <input class="input-text" id="card" type="text" name="card" placeholder="0000-0000-0000-0000">
-            <label class="step-5-block__label" for="card">Номер карты</label>
+
+          <div class="step-5-block__wrapper  step-5-block__wrapper--second">
+            <div class="step-5-block__item">
+              <label class="step-5-block__label  step-5-block__label--second" for="card">Номер карты</label>
+              <input class="input-text  input-text--step5" id="card" type="text" name="card" placeholder="0000-0000-0000-0000">
+            </div>
+            <div class="step-5-block__item">
+              <label class="step-5-block__label  step-5-block__label--second" for="customer">Фамилия владельца карты</label>
+              <input class="input-text  input-text--step5" id="customer" type="text" name="customer" placeholder="Vladimir Vladimirov">
+            </div>
+            <div class="step-5-block__item">
+              <label class="step-5-block__label  step-5-block__label--second" for="cvv">Код cvv</label>
+              <img src="img/question-icon.png" alt="Знак вопроса" width="16" height="17">
+              <input class="input-text  input-text--small  input-text--step5" id="cvv" type="text" name="cvv" placeholder="123">
+            </div>
+            <div class="step-5-block__item">
+              <label  class="step-5-block__label  step-5-block__label--second"for="valid-until">Действует до</label>
+              <input class="input-text  input-text--small  input-text--step5" id="valid-until" type="text" name="valid-until" placeholder="01 / 2018">
+            </div>
           </div>
-          <div class="step-5-block__item">
-            <input class="input-text" id="customer" type="text" name="customer" placeholder="Vladimir Vladimirov">
-            <label class="step-5-block__label" for="customer">Фамилия владельца карты</label>
-          </div>
-          <div class="step-5-block__item">
-            <input class="input-text" id="cvv" type="text" name="cvv" placeholder="123">
-            <label class="step-5-block__label" for="cvv">Код cvv</label>
-            <img src="img/question-icon.png" alt="Знак вопроса" width="16" height="17">
-          </div>
-          <div class="step-5-block__item">
-            <input class="input-text" id="valid-until" type="text" name="valid-until" placeholder="01 / 2018">
-            <label  class="step-5-block__label"for="valid-until">Действует до</label>
-          </div>
+
         </fieldset>
 
         <div class="date-notice">
-          <p class="page-form__text">К оплате</p>
-          <p class="page-form__text  page-form__text--small">
-            Пожалуйста, <a href="#check-in">выберите дату</a> въезда и выезда, чтобы увидеть сумму к оплате
+          <p class="date-notice__text  date-notice__text--line">К оплате</p>
+          <p class="date-notice__text  date-notice__text--small">
+            Пожалуйста, <a href="#check-in" class="date-notice__link">выберите дату</a> въезда и выезда, чтобы увидеть сумму к оплате
           </p>
         </div>
-
-        <button class="form-btn" type="submit">Забронировать</button>
-
+        <div class="form-wraper">
+          <button class="form-btn" type="submit">Забронировать</button>
+        </div>
       </form>
 
     </main>
