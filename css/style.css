@@ -2210,4 +2210,20 @@ input[type="checkbox"]:checked + label::before {
 
 .form-wraper {
   background-color: #f1f1f1;
+  text-align: center;
+  padding-top: 51px;
+  padding-bottom: 82px;
+}
+
+.form-btn {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #0ab89d;
+  border: 0;
+  outline: 0;
+  padding: 15px 75px;
+  cursor: pointer;
 }
