@@ -173,20 +173,16 @@
         <p class="page-form__text  page-form__text--step3">Шаг 5</p>
         <fieldset class="step-5-block">
           <legend class="page-form__title  page-form__title--step3">Способ оплаты</legend>
-          <label class="step-5-block__label">
-            <input type="radio" name="payment" value="later">
-            По приезду
-            <p class="page-form__notice">
-              Вы можете произвести оплату по факту заселения.
-            </p>
-          </label>
-          <label class="step-5-block__label">
-            <input type="radio" name="payment" value="now" checked>
-            Сейчас
-            <p class="page-form__notice">
-              Прямо сейчас вы можете произвести оплату с помощью банковской карты.
-            </p>
-          </label>
+          <div class="step-5-block__wrapper">
+            <input id="later" class="step-5-block__input" type="radio" name="payment" value="later">
+            <label for="later" class="step-5-block__label  step-5-block__label--radio">По приезду</label>
+            <p class="page-form__notice">Вы можете произвести оплату по факту заселения.</p>
+          </div>
+          <div class="step-5-block__wrapper">
+            <input id="now" class="step-5-block__input" type="radio" name="payment" value="now" checked>
+            <label for="now" class="step-5-block__label  step-5-block__label--radio">Сейчас</label>
+            <p class="page-form__notice">Прямо сейчас вы можете произвести оплату с помощью банковской карты.</p>
+          </div>
           <div class="step-5-block__item">
             <input class="input-text" id="card" type="text" name="card" placeholder="0000-0000-0000-0000">
             <label class="step-5-block__label" for="card">Номер карты</label>

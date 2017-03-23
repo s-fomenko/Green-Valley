@@ -1689,7 +1689,7 @@ body {
 
 .page-form__title--step3 {
   width: 100%;
-
+  padding-bottom: 36px;
   background-color: #f1f1f1;
 }
 
@@ -2029,7 +2029,52 @@ input[type="checkbox"]:checked + label::before {
 
 .step-5-block {
   padding: 0;
-
+  margin: 0;
   background-color: #f1f1f1;
   border: 0;
+  display: flex;
+  flex-direction: column
+}
+
+.step-5-block__wrapper {
+  background-color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #4c4c4c;
+  text-transform: uppercase;
+  padding: 22px 0px;
+  padding-left: 76px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+}
+
+.step-5-block__wrapper:first-of-type {
+  margin-bottom: 20px;
+}
+
+.step-5-block__input {
+  display: none;
+}
+
+.step-5-block__input +
+.step-5-block__label--radio::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 25px;
+  left: 40px;
+  background: url("../img/checkbox-off-icon.png") no-repeat;
+  width: 16px;
+  height: 12px;
+}
+
+.step-5-block__input:checked +
+.step-5-block__label--radio::before {
+  background: url("../img/checkbox-icon.png") no-repeat;
+}
+
+.page-form__notice {
+  display: none;
 }
