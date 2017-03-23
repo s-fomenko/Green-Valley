@@ -2146,6 +2146,8 @@ input[type="checkbox"]:checked + label::before {
 
 .date-notice {
   padding: 20px 0;
+
+  background-color: #ffffff;
 }
 
 .date-notice__text {
@@ -2209,21 +2211,133 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .form-wraper {
-  background-color: #f1f1f1;
-  text-align: center;
   padding-top: 51px;
   padding-bottom: 82px;
+
+  text-align: center;
+
+  background-color: #f1f1f1;
 }
 
 .form-btn {
+  padding: 15px 75px;
+
+  font-weight: 500;
   font-size: 14px;
   line-height: 18px;
-  font-weight: 500;
-  text-transform: uppercase;
   color: #ffffff;
+  text-transform: uppercase;
+
   background-color: #0ab89d;
   border: 0;
   outline: 0;
-  padding: 15px 75px;
   cursor: pointer;
+}
+
+@media all and (min-width: 768px) {
+  .outer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    justify-content: center;
+
+    -webkit-box-direction: reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+  }
+
+  .inner {
+    width: 475px;
+  }
+
+  .date-notice {
+    align-self: flex-start;
+    width: 275px;
+    margin-right: 20px;
+    padding-bottom: 200px;
+
+    -ms-flex-item-align: start;
+  }
+
+  .date-notice__text--line::after {
+    top: 38px;
+    left: 145px;
+  }
+
+  .date-notice__text--small {
+    padding: 0 20px 0 40px;
+  }
+
+  .step-5-block__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 15px 0;
+    padding-left: 21px;
+  }
+
+  .step-5-block__label--radio {
+    margin-right: 15px;
+    padding-left: 35px;
+  }
+
+  .step-5-block__input + .step-5-block__label--radio::before {
+    top: 20px;
+    left: 19px;
+  }
+
+  .page-form__notice {
+    display: block;
+  }
+
+  .page-form__notice--text {
+    width: 235px;
+    margin: 0;
+    padding: 0;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #4c4c4c;
+    text-transform: none;
+  }
+
+  .step-5-block__label--radio1 {
+    margin-right: 52px;
+    padding-left: 35px;
+  }
+
+  .page-form__notice--text1 {
+    width: 285px;
+  }
+
+  .outer1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .inner1 {
+    margin-right: 20px;
+  }
+
+  .input-text--step5 {
+    width: 235px;
+  }
+
+  .input-text--small {
+    width: 112px;
+  }
+
+  .form-wraper {
+    padding-top: 25px;
+    padding-bottom: 80px;
+  }
+
+  .form-btn {
+    width: 100%;
+  }
 }

@@ -173,50 +173,60 @@
         <p class="page-form__text  page-form__text--step3">Шаг 5</p>
         <fieldset class="step-5-block">
           <legend class="page-form__title  page-form__title--step3">Способ оплаты</legend>
-          <div class="step-5-block__wrapper">
-            <input id="later" class="step-5-block__input" type="radio" name="payment" value="later">
-            <label for="later" class="step-5-block__label  step-5-block__label--radio">По приезду</label>
-            <p class="page-form__notice">Вы можете произвести оплату по факту заселения.</p>
-          </div>
-          <div class="step-5-block__wrapper">
-            <input id="now" class="step-5-block__input" type="radio" name="payment" value="now" checked>
-            <label for="now" class="step-5-block__label  step-5-block__label--radio">Сейчас</label>
-            <p class="page-form__notice">Прямо сейчас вы можете произвести оплату с помощью банковской карты.</p>
+          <div class="outer">
+            <div class="inner">
+              <div class="step-5-block__wrapper">
+                <input id="later" class="step-5-block__input" type="radio" name="payment" value="later">
+                <label for="later" class="step-5-block__label  step-5-block__label--radio">По приезду</label>
+                <p class="page-form__notice  page-form__notice--text">Вы можете произвести оплату по факту заселения.</p>
+              </div>
+              <div class="step-5-block__wrapper">
+                <input id="now" class="step-5-block__input" type="radio" name="payment" value="now" checked>
+                <label for="now" class="step-5-block__label  step-5-block__label--radio  step-5-block__label--radio1">Сейчас</label>
+                <p class="page-form__notice  page-form__notice--text  page-form__notice--text1">Прямо сейчас вы можете произвести оплату с помощью банковской карты.</p>
+              </div>
+
+              <div class="step-5-block__wrapper  step-5-block__wrapper--second">
+                <div class="outer1">
+                  <div class="inner1">
+                    <div class="step-5-block__item">
+                      <label class="step-5-block__label  step-5-block__label--second" for="card">Номер карты</label>
+                      <input class="input-text  input-text--step5" id="card" type="text" name="card" placeholder="0000-0000-0000-0000">
+                    </div>
+                    <div class="step-5-block__item">
+                      <label class="step-5-block__label  step-5-block__label--second" for="customer">Фамилия владельца карты</label>
+                      <input class="input-text  input-text--step5" id="customer" type="text" name="customer" placeholder="Vladimir Vladimirov">
+                    </div>
+                  </div>
+                  <div class="iner1">
+                    <div class="step-5-block__item">
+                      <label class="step-5-block__label  step-5-block__label--second" for="cvv">Код cvv</label>
+                      <img src="img/question-icon.png" alt="Знак вопроса" width="16" height="17">
+                      <input class="input-text  input-text--small  input-text--step5" id="cvv" type="text" name="cvv" placeholder="123">
+                    </div>
+                    <div class="step-5-block__item">
+                      <label  class="step-5-block__label  step-5-block__label--second"for="valid-until">Действует до</label>
+                      <input class="input-text  input-text--small  input-text--step5" id="valid-until" type="text" name="valid-until" placeholder="01 / 2018">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="date-notice">
+              <p class="date-notice__text  date-notice__text--line">К оплате</p>
+              <p class="date-notice__text  date-notice__text--small">
+                Пожалуйста, <a href="#check-in" class="date-notice__link">выберите дату</a> въезда и выезда, чтобы увидеть сумму к оплате
+              </p>
+            </div>
           </div>
 
-          <div class="step-5-block__wrapper  step-5-block__wrapper--second">
-            <div class="step-5-block__item">
-              <label class="step-5-block__label  step-5-block__label--second" for="card">Номер карты</label>
-              <input class="input-text  input-text--step5" id="card" type="text" name="card" placeholder="0000-0000-0000-0000">
-            </div>
-            <div class="step-5-block__item">
-              <label class="step-5-block__label  step-5-block__label--second" for="customer">Фамилия владельца карты</label>
-              <input class="input-text  input-text--step5" id="customer" type="text" name="customer" placeholder="Vladimir Vladimirov">
-            </div>
-            <div class="step-5-block__item">
-              <label class="step-5-block__label  step-5-block__label--second" for="cvv">Код cvv</label>
-              <img src="img/question-icon.png" alt="Знак вопроса" width="16" height="17">
-              <input class="input-text  input-text--small  input-text--step5" id="cvv" type="text" name="cvv" placeholder="123">
-            </div>
-            <div class="step-5-block__item">
-              <label  class="step-5-block__label  step-5-block__label--second"for="valid-until">Действует до</label>
-              <input class="input-text  input-text--small  input-text--step5" id="valid-until" type="text" name="valid-until" placeholder="01 / 2018">
-            </div>
+          <div class="form-wraper">
+            <button class="form-btn" type="submit">Забронировать</button>
           </div>
 
         </fieldset>
-
-        <div class="date-notice">
-          <p class="date-notice__text  date-notice__text--line">К оплате</p>
-          <p class="date-notice__text  date-notice__text--small">
-            Пожалуйста, <a href="#check-in" class="date-notice__link">выберите дату</a> въезда и выезда, чтобы увидеть сумму к оплате
-          </p>
-        </div>
-        <div class="form-wraper">
-          <button class="form-btn" type="submit">Забронировать</button>
-        </div>
       </form>
-
     </main>
 
     <footer class="page-footer">
